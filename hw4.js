@@ -101,9 +101,6 @@ console.log("#13) (after changing nested object):", { originalData, clonedData }
 function Animal(species, sound) {
   this.species = species;
   this.sound = sound;
-  this.speak = function () {
-    return `${this.species} says ${this.sound}`;
-  };
 }
 
 console.log("#14) Animal constructor created");
@@ -113,4 +110,4 @@ let dog = new Animal("Canine", "Woof");
 let cat = new Animal("Feline", "Meow");
 let animalArray = [dog, cat];
 
-console.log("#15)", animalArray.map(a => a.speak()));
+console.log("#15)", animalArray);
